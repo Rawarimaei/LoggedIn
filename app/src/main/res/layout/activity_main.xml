@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DAD4DA"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="162dp"
+        android:layout_height="74dp"
+        android:fontFamily="serif"
+        android:padding="5dp"
+        android:text="Login"
+        android:textColor="#2E2547"
+        android:textSize="48dp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="131dp" />
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="383dp"
+        android:layout_height="68dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:background="#AD3FBF"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textColorHint="#2C2C2C"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="378dp"
+        android:layout_height="66dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="200dp"
+        android:background="#AD3FBF"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="text"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textColorHint="#2C2C2C"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login" />
+
+    <CheckBox
+        android:id="@+id/remember_me"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="24dp"
+        android:text="Remeber me"
+        android:textColor="#9408AC"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="128dp"
+        android:layout_height="126dp"
+        app:srcCompat="@drawable/login"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+
+        android:layout_marginTop="136dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/buttoncus"
+        android:padding="5dp"
+        android:text="Login"
+        android:textSize="24sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/switchl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="If Don't hava an acount?!Create now:)"
+        android:textColor="#3F1945"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
